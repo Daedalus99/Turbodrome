@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://be787phmsvtp6"
+path="res://.godot/imported/Car Engine Rev.ogg-8d34e46c26a954ddb5e7396260d5de0a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Audio/Car SFX/Car Engine Rev.ogg"
+dest_files=["res://.godot/imported/Car Engine Rev.ogg-8d34e46c26a954ddb5e7396260d5de0a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b80l8rw0a0m45"]
+
+[ext_resource type="Script" uid="uid://d5raakbhe3a" path="res://Scripts/Followcam.cs" id="1_wpduk"]
+
+[node name="Camera3D" type="Camera3D"]
+fov = 87.5
+script = ExtResource("1_wpduk")

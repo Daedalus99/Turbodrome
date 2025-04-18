@@ -1,0 +1,86 @@
+[gd_scene load_steps=7 format=3 uid="uid://bibqwkjupibgp"]
+
+[ext_resource type="Script" uid="uid://jq6xcr6r8rlw" path="res://Scripts/CarController.cs" id="1_1k6jk"]
+[ext_resource type="PackedScene" uid="uid://bt83p6eet218q" path="res://Art/Camero.glb" id="2_y2uan"]
+[ext_resource type="PackedScene" uid="uid://ckr2j0emndjae" path="res://Scenes/wheel.tscn" id="3_jbim0"]
+[ext_resource type="AudioStream" uid="uid://dqs81ne3p3lh0" path="res://Audio/Car SFX/Car Idle.ogg" id="4_qeqd0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_raw6b"]
+size = Vector3(1.87671, 1.10297, 4.88843)
+
+[sub_resource type="SphereMesh" id="SphereMesh_jbim0"]
+
+[node name="VehicleBody3D" type="VehicleBody3D" node_paths=PackedStringArray("camPosF", "camPosR", "lerpingCamPos")]
+mass = 1200.0
+script = ExtResource("1_1k6jk")
+maxSpeed = 500.0
+camPosF = NodePath("CamPos")
+camPosR = NodePath("CamPosReverse")
+lerpingCamPos = NodePath("LerpingCamPos")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.107575, -0.0292966)
+shape = SubResource("BoxShape3D_raw6b")
+
+[node name="CameroMesh" parent="." instance=ExtResource("2_y2uan")]
+transform = Transform3D(0.531149, 0, 0, 0, 0.531149, 0, 0, 0, 0.531149, 0, 0, 0)
+
+[node name="FrontLeftWheel" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03538, -0.333122, 1.60258)
+use_as_steering = true
+wheel_radius = 0.3
+suspension_stiffness = 40.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="Wheel" parent="FrontLeftWheel" instance=ExtResource("3_jbim0")]
+
+[node name="FrontRightWheel" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02637, -0.333122, 1.60258)
+use_as_steering = true
+wheel_radius = 0.3
+suspension_stiffness = 40.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="Wheel" parent="FrontRightWheel" instance=ExtResource("3_jbim0")]
+
+[node name="BackLeftWheel" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03538, -0.320639, -1.33071)
+use_as_traction = true
+wheel_radius = 0.35
+suspension_stiffness = 40.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="Wheel" parent="BackLeftWheel" instance=ExtResource("3_jbim0")]
+
+[node name="BackRightWheel" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02637, -0.320639, -1.33071)
+use_as_traction = true
+wheel_radius = 0.35
+suspension_stiffness = 40.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="Wheel" parent="BackRightWheel" instance=ExtResource("3_jbim0")]
+
+[node name="CamPosReverse" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 2)
+
+[node name="CamPos" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -2.5)
+
+[node name="LerpingCamPos" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -1.01912)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LerpingCamPos"]
+transform = Transform3D(0.175, 0, 0, 0, 0.175, 0, 0, 0, 0.175, 0, 0, 0)
+visible = false
+mesh = SubResource("SphereMesh_jbim0")
+
+[node name="CarAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_qeqd0")
+volume_db = -30.0
+autoplay = true
+parameters/looping = true

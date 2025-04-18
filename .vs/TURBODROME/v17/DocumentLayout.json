@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\locke_kygqkto\\Documents\\turbodrome\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FC4B0B-4397-4270-8FC2-BE68B9BB7CE1}|turbodrome.csproj|c:\\users\\locke_kygqkto\\documents\\turbodrome\\scripts\\followcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FC4B0B-4397-4270-8FC2-BE68B9BB7CE1}|turbodrome.csproj|solutionrelative:scripts\\followcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FC4B0B-4397-4270-8FC2-BE68B9BB7CE1}|turbodrome.csproj|c:\\users\\locke_kygqkto\\documents\\turbodrome\\scripts\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FC4B0B-4397-4270-8FC2-BE68B9BB7CE1}|turbodrome.csproj|solutionrelative:scripts\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FC4B0B-4397-4270-8FC2-BE68B9BB7CE1}|turbodrome.csproj|c:\\users\\locke_kygqkto\\documents\\turbodrome\\scenes\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FC4B0B-4397-4270-8FC2-BE68B9BB7CE1}|turbodrome.csproj|solutionrelative:scenes\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\locke_kygqkto\\Documents\\turbodrome\\Scenes\\UIManager.cs",
+              "RelativeDocumentMoniker": "Scenes\\UIManager.cs",
+              "ToolTip": "C:\\Users\\locke_kygqkto\\Documents\\turbodrome\\Scenes\\UIManager.cs",
+              "RelativeToolTip": "Scenes\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:29:48.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Followcam.cs",
+              "DocumentMoniker": "C:\\Users\\locke_kygqkto\\Documents\\turbodrome\\Scripts\\Followcam.cs",
+              "RelativeDocumentMoniker": "Scripts\\Followcam.cs",
+              "ToolTip": "C:\\Users\\locke_kygqkto\\Documents\\turbodrome\\Scripts\\Followcam.cs",
+              "RelativeToolTip": "Scripts\\Followcam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T00:51:29.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\locke_kygqkto\\Documents\\turbodrome\\Scripts\\CarController.cs",
+              "RelativeDocumentMoniker": "Scripts\\CarController.cs",
+              "ToolTip": "C:\\Users\\locke_kygqkto\\Documents\\turbodrome\\Scripts\\CarController.cs",
+              "RelativeToolTip": "Scripts\\CarController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAApwFgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T17:58:31.803Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
